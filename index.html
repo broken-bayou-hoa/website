@@ -12,9 +12,11 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Broken Bayou Homeowners Association" />
   <meta name="twitter:image" content="https://images.squarespace-cdn.com/content/v1/5fb421df876e407b918720fe/1609310507066-4T8LWHC1R2J63N04YYH2/Logo-Black.png?format=1500w" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="apple-touch-icon" href="favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -94,12 +96,12 @@
       <div class="container">
         <h2>Access our Governing Documents</h2>
         <ul class="doc-list">
-          <li><a href="docs/Notice-of-Dedicatory-Instruments.pdf" target="_blank" rel="noopener">Notice of Dedicatory Instruments</a></li>
-          <li><a href="docs/By-Laws-002.pdf" target="_blank" rel="noopener">By-laws</a></li>
-          <li><a href="docs/Rules-and-Regulations.pdf" target="_blank" rel="noopener">Rules &amp; Regulations</a></li>
-          <li><a href="docs/Articles-of-Incorporation-for-Broken-Bayou.pdf" target="_blank" rel="noopener">Articles of Incorporation</a></li>
-          <li><a href="docs/Third-Amendment-for-Broken-Bayou6-15-1987.pdf" target="_blank" rel="noopener">Third Amendment</a></li>
-          <li><a href="docs/BB-HOA-MGT-Certificate-03-02-2022.pdf" target="_blank" rel="noopener">Property Owners Association Management Certificate</a></li>
+          <li><a href="docs/Notice of Dedicatory Instruments.pdf" target="_blank" rel="noopener">Notice of Dedicatory Instruments</a></li>
+          <li><a href="docs/By-Laws (002).pdf" target="_blank" rel="noopener">By-laws</a></li>
+          <li><a href="docs/Rules and Regulations.pdf" target="_blank" rel="noopener">Rules &amp; Regulations</a></li>
+          <li><a href="docs/Articles of Incorporation for Broken Bayou.pdf" target="_blank" rel="noopener">Articles of Incorporation</a></li>
+          <li><a href="docs/Third Amendment for Broken Bayou6 15 1987.pdf" target="_blank" rel="noopener">Third Amendment</a></li>
+          <li><a href="docs/BB HOA MGT Certificate 03-02-2022.pdf" target="_blank" rel="noopener">Property Owners Association Management Certificate</a></li>
         </ul>
       </div>
     </section>
@@ -107,23 +109,22 @@
     <!-- DIVIDER -->
     <div class="divider"></div>
 
-    <!-- CONTACT FORM + MAP -->
+    <!-- CONTACT SECTION -->
     <section class="contact-section" id="contact">
       <div class="contact-inner">
-        <div class="contact-form-col">
-          <h2>Contact Us</h2>
-          <form
-            id="contactForm"
-            action="https://formsubmit.co/info@brokenbayouhoa.com"
-            method="POST"
-          >
-            <!-- FormSubmit config -->
-            <input type="hidden" name="_subject" value="Message from Broken Bayou HOA Website" />
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_next" value="thanks.html" />
-            <input type="text" name="_honey" style="display:none" />
 
-            <fieldset class="name-group">
+        <h2 class="contact-title">Contact Us</h2>
+
+        <!-- FORM — uses Web3Forms, free, no backend needed -->
+        <div class="contact-form-col">
+          <form id="contactForm">
+            <!-- Web3Forms access key — replace with yours from web3forms.com/register -->
+            <input type="hidden" name="access_key" value="PASTE_YOUR_WEB3FORMS_KEY_HERE" />
+            <input type="hidden" name="subject" value="Message from Broken Bayou HOA Website" />
+            <input type="hidden" name="redirect" value="thanks.html" />
+            <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" />
+
+            <fieldset>
               <legend>Name</legend>
               <div class="name-row">
                 <div class="field-wrap">
@@ -139,30 +140,31 @@
 
             <div class="field-wrap">
               <label for="email">Email <span class="req">(required)</span></label>
-              <input type="email" id="email" name="Email" required />
+              <input type="email" id="email" name="email" required />
             </div>
 
             <div class="field-wrap">
               <label for="message">Message <span class="req">(required)</span></label>
-              <textarea id="message" name="Message" rows="5" required></textarea>
+              <textarea id="message" name="message" rows="6" required></textarea>
             </div>
 
-            <button type="submit" class="submit-btn">Connect With Us</button>
+            <div id="formStatus" class="form-status" style="display:none"></div>
+
+            <button type="submit" class="submit-btn" id="submitBtn">Connect With Us</button>
           </form>
         </div>
 
+        <!-- MAP -->
         <div class="contact-map-col">
           <iframe
             title="Broken Bayou HOA Location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3462.9!2d-95.5900!3d29.7750!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640dbb0f8522aab%3A0x29ef4b22d0a0d1d6!2s15615%20Memorial%20Dr%2C%20Houston%2C%20TX%2077079!5e1!3m2!1sen!2sus!4v1700000000000"
-            width="100%"
-            height="100%"
-            style="border:0;"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3464.019!2d-95.5927!3d29.7720!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640dbb0f8522aab%3A0x29ef4b22d0a0d1d6!2s15615%20Memorial%20Dr%2C%20Houston%2C%20TX%2077079!5e1!3m2!1sen!2sus!4v1700000000000"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade">
           </iframe>
         </div>
+
       </div>
     </section>
 
