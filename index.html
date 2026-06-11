@@ -115,43 +115,10 @@
 
         <h2 class="contact-title">Contact Us</h2>
 
-        <!-- FORM — uses Web3Forms, free, no backend needed -->
+        <!-- EMAIL CONTACT -->
         <div class="contact-form-col">
-          <form id="contactForm">
-            <!-- Web3Forms access key — replace with yours from web3forms.com/register -->
-            <input type="hidden" name="access_key" value="PASTE_YOUR_WEB3FORMS_KEY_HERE" />
-            <input type="hidden" name="subject" value="Message from Broken Bayou HOA Website" />
-            <input type="hidden" name="redirect" value="thanks.html" />
-            <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" />
-
-            <fieldset>
-              <legend>Name</legend>
-              <div class="name-row">
-                <div class="field-wrap">
-                  <label for="firstName">First Name <span class="req">(required)</span></label>
-                  <input type="text" id="firstName" name="First Name" required />
-                </div>
-                <div class="field-wrap">
-                  <label for="lastName">Last Name <span class="req">(required)</span></label>
-                  <input type="text" id="lastName" name="Last Name" required />
-                </div>
-              </div>
-            </fieldset>
-
-            <div class="field-wrap">
-              <label for="email">Email <span class="req">(required)</span></label>
-              <input type="email" id="email" name="email" required />
-            </div>
-
-            <div class="field-wrap">
-              <label for="message">Message <span class="req">(required)</span></label>
-              <textarea id="message" name="message" rows="6" required></textarea>
-            </div>
-
-            <div id="formStatus" class="form-status" style="display:none"></div>
-
-            <button type="submit" class="submit-btn" id="submitBtn">Connect With Us</button>
-          </form>
+          <p class="contact-blurb">Have a question or need to reach the board? We'd love to hear from you.</p>
+          <a href="mailto:info@brokenbayouhoa.com" class="email-btn">Contact Us at info@brokenbayouhoa.com</a>
         </div>
 
         <!-- MAP -->

@@ -313,92 +313,35 @@ main {
 .contact-form-col {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
-/* Fieldset reset */
-.contact-form-col fieldset {
-  border: none;
-  padding: 0;
-  margin: 0 0 4px;
-}
-
-.contact-form-col legend {
+/* Contact text and email button */
+.contact-blurb {
   font-family: 'Lato', sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  color: #fff;
-  margin-bottom: 6px;
-  padding: 0;
-  float: left;
-  width: 100%;
-}
-
-.name-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  clear: both;
-}
-
-.field-wrap {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 18px;
-}
-
-.field-wrap label {
-  font-family: 'Lato', sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  color: #fff;
-  margin-bottom: 5px;
-}
-
-.field-wrap .req {
-  font-size: 11px;
+  font-size: 16px;
   font-weight: 300;
-  opacity: 0.8;
+  color: #fff;
+  line-height: 1.7;
+  margin-bottom: 28px;
 }
 
-.field-wrap input[type="text"],
-.field-wrap input[type="email"],
-.field-wrap textarea {
+.email-btn {
+  display: inline-block;
   background: #fff;
-  border: none;
-  padding: 10px 12px;
+  color: #555;
   font-family: 'Lato', sans-serif;
   font-size: 14px;
-  color: #333;
-  outline: none;
-  resize: vertical;
-  width: 100%;
-  transition: box-shadow 0.2s;
-}
-
-.field-wrap input[type="text"]:focus,
-.field-wrap input[type="email"]:focus,
-.field-wrap textarea:focus {
-  box-shadow: 0 0 0 2px rgba(255,255,255,0.6);
-}
-
-.submit-btn {
-  background: #fff;
-  color: #666;
-  border: none;
-  padding: 13px 32px;
-  font-family: 'Lato', sans-serif;
-  font-size: 13px;
   font-weight: 400;
-  letter-spacing: 0.05em;
-  cursor: pointer;
-  align-self: flex-start;
+  letter-spacing: 0.04em;
+  padding: 14px 28px;
+  text-decoration: none !important;
   transition: background 0.2s, color 0.2s;
-  margin-top: 6px;
 }
 
-.submit-btn:hover {
+.email-btn:hover {
   background: #eee;
-  color: #333;
+  color: #222;
 }
 
 /* Map column */
